@@ -1,0 +1,10 @@
+objects = crawler.o 
+
+all: $(objects)
+	cc -o crawler $(objects)
+
+
+
+.PHONY : clean
+clean:
+	-rm crawler $(objects)
